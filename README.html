@@ -5,8 +5,26 @@
 <p id="teste"></p>
 
 <script>
-let x = 3 + "boll"
-document.getElementById("teste").innerHTML = x;
+let monkey = {
+  walk: true,
+  speak() {
+    alert("Monkey speak");
+  }
+};
+  
+  let human = {
+    eat: true,
+    __proto__: monkey
+  };
+  
+let bananaMan = {
+  legTimes: 2,
+  __proto__: human
+};
+  legTimes.walk();
+  alert(bananaMan.eat);
+  
+document.getElementById("teste").innerHTML = ;
 </script>
 
 
